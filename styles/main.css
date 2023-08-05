@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap');
+
+/* ---------------------------------------- */
+/* Global Styles */
+
+/* Fonts */
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+/* Spacing */
+.full-height {
+    height: 100vh;
+}
+
+/* ---------------------------------------- */
+/* Components */
+
+button {
+    border: none;
+    padding: 16px 20px;
+    border-radius: 8px;
+    background: #18382B;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+/* ---------------------------------------- */
+/* Bootstrap Component Overrides */
+
+/* Navigation */
+
+.nav-link {
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0, 0.60);
+}
+
+.nav-link:hover {
+    color: #18382B;
+}
+
+
+.nav-link.active {
+    border-bottom: 2px solid #18382B;
+    color: #18382B;
+}
+
+.about-btn {
+    font-family: 'Lato', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.about-btn:hover {
+    color: #cad4d0;
+}
+
+.about-btn.active {
+    border-bottom: 0px solid #18382B;
+    color: #18382B;
+}
+
+/* Carousel */
+
+.carousel-item {
+    background-color: #E6F2E9;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: auto;
+    right: auto;
+    left: 24px;
+    bottom: 24px;
+    width: auto;
+    background-color: white;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.carousel-control-next {
+    left: 84px;
+}
+
+/* Card */
+
+.card {
+    border-radius: 150px 150px 12px 12px;
+    background: #F3F3F3;
+    text-align: center;
+    height: 440px;
+    border: none;
+}
+
+.card-img-top {
+    width:auto;
+    height:320px;
+    margin: auto;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+
+.table-img-center{
+
+    height:220px;
+    margin: auto;
+    
+}
+
+.card-img-top.small {
+    height:200px;
+}
+
+.card-text {
+    color: #18382B;
+}
+
+/* ---------------------------------------------------------------- */
+/* Home Page */
+
+.hero-image {
+    height: 90vh; 
+    position: relative;
+    bottom: -100px;
+}
+
+.form-control {
+width:520px;
+}
+
+.row2{
+    width:420px;
+    border-color: #18382B;
+   
+}
+
+.form-control active {
+    color: #18382B;
+    }
+
+    .accordion{
+        width:520px;
+        background-color: rgba(92, 195, 97, 0.6);
+        border-radius: 100px 100px 100px 100px;
+
+    }
+
+    .accordion-button{
+        border-color: rgba(92, 195, 97, 0.6);
+        border:  5px solid #18382B;;
+        
+    }
+
+.table{
+    margin-top:50px;
+    
+
+}
+
+.main__photos{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.footer-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-list li {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    width: 100%;
+    margin: 24px 0 0;
+    padding-left: 16px;
+    color: #f64c4f;
+    break-after: avoid-column;
+    break-before: avoid-column;
+    break-inside: avoid-column;
+    min-height: 32px;
+}
+.footer-list small {
+    padding-top: 11px;
+}
+.footer-list li::before {
+    position: absolute;
+    left: 0;
+    display: block;
+    content: '\276F';
+}
+.footer-list li a {
+    color: #ccc;
+}
+.footer-list li a:hover {
+    text-decoration: none;
+    color: #f64c4f;
+}
+.footer-list li a small{
+    display: block;
+}
+
+.main__photos-item{
+    height: 180px;
+    position: relative;
+}
+.main__photos-item-img{
+    /* min-height: 380px;
+    min-width: 100%; */
+    
+    width: auto;
+}
+
+
+.main__photos-item{
+    position: relative;
+    z-index: 100;
+}
+.main__photos-item-img{
+    position: absolute;
+}
+
+.main__photos-item span {
+    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    text-align: center;
+    background-color: rgba(50,58,77,.5);
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.footer__inner{
+    box-sizing: border-box;
+    min-width: 234px;
+    max-width: 1096px;
+    margin: 0 auto;
+
+}
+.footer-item{
+    padding-top: 48px;
+}
+.footer__inner {
+    padding-bottom: 48px ;
+    
+}
+.footer-h3{
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    min-height: 37px;
+}
+.footer-h3 span{
+    color: #fff;
+    font-weight: 400;
+}
+.footer-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-list li {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    width: 100%;
+    margin: 24px 0 0;
+    padding-left: 16px;
+    color: #f64c4f;
+    break-after: avoid-column;
+    break-before: avoid-column;
+    break-inside: avoid-column;
+    min-height: 32px;
+}
+.footer-list small {
+    padding-top: 11px;
+}
+.footer-list li::before {
+    position: absolute;
+    left: 0;
+    display: block;
+    content: '\276F';
+}
+.footer-list li a {
+    color: #131313;
+}
+.footer-list li a:hover {
+    text-decoration: none;
+    color: #f64c4f;
+}
+.footer-list li a small{
+    display: block;
+}
+small{
+    font-size: 80%;
+}
+.footer-h3 i{
+    color: red;
+    
+}
+.footer__social-link{
+    font-size: 20px;
+    display: inline-block;
+    padding: 16px 8px;
+    text-decoration: none;
+}
+.footer__social-link i:hover{
+    color: #ccc;
+}
+.footer__social-link i{
+    color: #f64c4f ;
+    font-size: 20px;
+}
+footer p{
+    color: #ccc;
+}
+.footer-h3{
+    font-size: 18px;
+}
+.footer-h3 span{
+    font-size: 18px;
+}
+
+
+.section__block-info__wrapper {
+    box-sizing: border-box;
+    min-width: 234px;
+    max-width: 1096px;
+    margin: 0 16px;
+    color: #323a4d;
+}
+.block-info__item-inner h2 {
+    position: relative;
+    padding-bottom: 16px;
+    color: #323a4d;
+    line-height: 1.4;
+}
+
+.review-box {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+  /* Styling for the review button */
+  .review-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .review-button:hover {
+    background-color: #0056b3;
+  }
+
+  .item__right ul{
+    column-count: 1 !important;
+}
+
+.c-list__item{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: 16px serif;
+}
